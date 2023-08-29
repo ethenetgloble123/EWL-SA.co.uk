@@ -49,7 +49,39 @@
                 ></iframe>
             </div>
         </section>
-        
+        <section id="pricing">
+    <h2>Pricing and Plans</h2>
+    <p>Choose the perfect plan for your event coverage needs:</p>
+    
+    <div class="pricing-options">
+        <div class="plan">
+            <h3>Basic Plan</h3>
+            <p>Includes <span id="includedCamerasText">2</span> cameras</p>
+            <input type="number" id="includedCameras" value="2" min="0" max="100" onchange="updateTotalCost()">
+            <p>Time-Lapse Videos</p>
+            <p>Online Live Streaming (up to 4 days)</p>
+            <p>Cameras System Install and Pack-Down</p>
+            <p>Promotional Video</p>
+            <p id="basicPlanTotal">Total: £300</p>
+            <button class="select-plan-btn">Select</button>
+        </div>
+    </div>
+</section>
+
+<script>
+function updateTotalCost() {
+    const includedCameras = parseInt(document.getElementById("includedCameras").value);
+    const additionalCameras = includedCameras > 2 ? includedCameras - 2 : 0;
+    const additionalCamerasCost = additionalCameras * 130;
+    const totalCost = 300 + additionalCamerasCost;
+    
+    document.getElementById("includedCamerasText").textContent = includedCameras;
+    document.getElementById("basicPlanTotal").textContent = `Total: £${totalCost}`;
+}
+</script>
+
+
+
     </main>
     <section id="contact">
         <div class="contact-info">
