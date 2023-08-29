@@ -1,0 +1,128 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #666;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #555;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 3px solid #333;
+    padding-left: 15px;
+    margin: 15px 0;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* ... (other styles) ... */
+
+
+Sure, I can provide you with a modified version of the HTML and CSS that uses a properly cropped banner image. Here's how you can do it:
+
+HTML (index.html):
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (other meta tags and links) ... -->
+</head>
+<body>
+    <header>
+        <!-- ... (navigation) ... -->
+        <div class="banner">
+            <img src="banner-image.jpg" alt="EventWatchLive Banner">
+        </div>
+    </header>
+    <!-- ... (rest of the content) ... -->
+</body>
+</html>
+CSS (styles.css):
+css
+Copy code
+/* ... (other styles) ... */
+
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    height: 300px; /* Set the desired height for your banner */
+}
+
+.banner img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+}
+
+/* Add styles to center the image vertically if needed */
+.banner img.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* ... (rest of the styles) ... */
+
